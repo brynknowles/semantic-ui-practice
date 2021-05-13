@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
 </head>
 <body>
+    <!-- you must have a ui container div around all of your html in order for semantic ui to work -->
     <div class="ui container">
         <!-- HEADER -->
         <h1 class="ui huge header">Huge header</h1>
@@ -265,9 +266,356 @@
         <br>
 
         <!-- TABLES & PAGINATION -->
-        
+        <table class="ui celled table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Job</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="ui ribbon label" data-label="Name">James</td>
+                    <td data-label="Age">24</td>
+                    <td data-label="Job">Engineer</td>
+                </tr>
+                <tr class="positive">
+                    <td data-label="Name">Jill</td>
+                    <td data-label="Age">26</td>
+                    <td data-label="Job">Engineer</td>
+                </tr>
+                <tr class="negative">
+                    <td data-label="Name">Elyse</td>
+                    <td data-label="Age">24</td>
+                    <td data-label="Job">Designer</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="3">
+                    <div class="ui right floated pagination menu">
+                        <a class="icon item">
+                        <i class="left chevron icon"></i>
+                        </a>
+                        <a class="item">1</a>
+                        <a class="item">2</a>
+                        <a class="item">3</a>
+                        <a class="item">4</a>
+                        <a class="icon item">
+                        <i class="right chevron icon"></i>
+                        </a>
+                    </div>
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
 
+        <br><br>
+        <hr>
 
+        <!-- SEGMENTS -->
+
+        <div class="ui segment">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi recusandae, veniam obcaecati impedit libero atque ipsum deleniti delectus architecto non suscipit itaque quas, quod in saepe necessitatibus, officia rem illum.</p>
+        </div>
+
+        <div class="ui raised segment">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi recusandae, veniam obcaecati impedit libero atque ipsum deleniti delectus architecto non suscipit itaque quas, quod in saepe necessitatibus, officia rem illum.</p>
+        </div>
+
+        <div class="ui stacked segment">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi recusandae, veniam obcaecati impedit libero atque ipsum deleniti delectus architecto non suscipit itaque quas, quod in saepe necessitatibus, officia rem illum.</p>
+        </div>
+
+        <div class="ui piled segment">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi recusandae, veniam obcaecati impedit libero atque ipsum deleniti delectus architecto non suscipit itaque quas, quod in saepe necessitatibus, officia rem illum.</p>
+        </div>
+
+        <div class="ui raised segments">
+            <div class="ui blue inverted segment">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi recusandae, veniam obcaecati impedit libero atque ipsum deleniti delectus architecto non suscipit itaque quas, quod in saepe necessitatibus, officia rem illum.</p>
+            </div>
+            <div class="ui red segment">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi recusandae, veniam obcaecati impedit libero atque ipsum deleniti delectus architecto non suscipit itaque quas, quod in saepe necessitatibus, officia rem illum.</p>
+            </div>
+            <div class="ui green segment">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi recusandae, veniam obcaecati impedit libero atque ipsum deleniti delectus architecto non suscipit itaque quas, quod in saepe necessitatibus, officia rem illum.</p>
+            </div>
+        </div>
+
+        <br><br>
+        <hr>
+
+        <!-- STEPS -->
+
+        <div class="ui steps">
+            <div class="step">
+                <i class="truck icon"></i>
+                <div class="content">
+                    <div class="title">Shipping</div>
+                    <div class="description">Choose your shipping options</div>
+                </div>
+                </div>
+                <div class="active step">
+                <i class="payment icon"></i>
+                <div class="content">
+                    <div class="title">Billing</div>
+                    <div class="description">Enter billing information</div>
+                </div>
+                </div>
+                <div class="disabled step">
+                <i class="info icon"></i>
+                <div class="content">
+                    <div class="title">Confirm Order</div>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+        <hr>
+
+        <!-- CONTENT BLOCK -->
+        <div class="ui card">
+            <div class="content">
+                <div class="header">
+                    Content Block 
+                </div>
+                <div class="meta">
+                    Meta Info 
+                </div>
+            </div>
+            <div class="content">
+                <p>This is my content</p>
+            </div>
+            <div class="content extra">
+                <button class="ui button" type="button" name="button">extra content</button>
+            </div>
+        </div>
+
+        <br><br>
+        <hr>
+
+        <!-- ITEM -->
+
+        <div class="ui items">
+            <div class="item">
+                <div class="image">
+                    <img src="https://semantic-ui.com/images/wireframe/image.png">
+                </div>
+                <div class="content">
+                    <a class="header">Header</a>
+                    <div class="meta">
+                    <span>Description</span>
+                    </div>
+                    <div class="description">
+                    <p></p>
+                    </div>
+                    <div class="extra">
+                    Additional Details
+                    </div>
+                </div>
+                </div>
+                <div class="item">
+                <div class="image">
+                    <img src="https://semantic-ui.com/images/wireframe/image.png">
+                </div>
+                <div class="content">
+                    <a class="header">Header</a>
+                    <div class="meta">
+                    <span>Description</span>
+                    </div>
+                    <div class="description">
+                    <p></p>
+                    </div>
+                    <div class="extra">
+                    Additional Details
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+            <hr>
+
+            <!-- STATISTIC -->
+
+            <div class="ui statistic">
+                <div class="value">
+                    5,550
+                </div>
+                <div class="label">
+                    Downloads
+                </div>
+            </div>
+
+            <br><br>
+            <hr>
+
+            <!-- GRID SYSTEM -->
+            <!-- 16 column grid by default, unlike bootstrap, infoundation and most others which are 12 column grids -->
+
+            <div class="ui grid">
+                <div class="row">
+                    <div class="column">
+                        <button class="ui huge button"></button>
+                    </div>
+                    <div class="column">
+                        <button class="ui huge button"></button>
+                    </div>
+                    <div class="column">
+                        <button class="ui huge button"></button>
+                    </div>
+                    <div class="column">
+                        <button class="ui huge button"></button>
+                    </div>
+                </div>
+                <div class="column">
+                    <button class="ui huge button"></button>
+                </div>
+                <div class="column">
+                    <button class="ui huge button"></button>
+                </div>
+                <div class="column">
+                    <button class="ui huge button"></button>
+                </div>
+                <div class="column">
+                    <button class="ui huge button"></button>
+                </div>
+                <div class="column">
+                    <button class="ui huge button"></button>
+                </div>
+                <div class="column">
+                    <button class="ui huge button"></button>
+                </div>
+                <div class="column">
+                    <button class="ui huge button"></button>
+                </div>
+                <div class="column">
+                    <button class="ui huge button"></button>
+                </div>
+            </div>
+            
+            <div class="ui grid">
+                <div class="column four wide">
+                    <button class="ui huge button fluid"></button>
+                </div>
+                <div class="column four wide">
+                    <button class="ui huge button fluid"></button>
+                </div>
+                <div class="column four wide">
+                    <button class="ui huge button fluid"></button>
+                </div>
+                <div class="column four wide">
+                    <button class="ui huge button fluid"></button>
+                </div>
+            </div>
+
+            <div class="ui grid">
+                <div class="column four wide">
+                    <button class="ui huge button fluid"></button>
+                </div>
+                <div class="column eight wide">
+                    <button class="ui huge button fluid"></button>
+                </div>
+                <div class="column four wide">
+                    <button class="ui huge button fluid"></button>
+                </div>
+            </div>
+
+            <div class="ui grid">
+                <div class="column four row">
+                    <div class="left floated column">
+                        <button class="ui huge button fluid"></button>
+                    </div>
+                    <div class="center floated column">
+                        <button class="ui huge button fluid"></button>
+                    </div>
+                    <div class="right floated column">
+                        <button class="ui huge button fluid"></button>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+            <hr>
+
+            <!-- MODAL -->
+            <!-- with following JS code: 
+                $('.ui.modal')
+                    .modal('show')
+                ; 
+            -->
+
+            <div class="ui modal">
+                <i class="close icon"></i>
+                <div class="header">
+                    Profile Picture
+                </div>
+                <div class="image content">
+                    <div class="ui medium image">
+                        <img src="/images/avatar/large/chris.jpg">
+                    </div>
+                    <div class="description">
+                        <div class="ui header">We've auto-chosen a profile image for you.</div>
+                        <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+                        <p>Is it okay to use this photo?</p>
+                    </div>
+                </div>
+                <div class="actions">
+                    <div class="ui black deny button">
+                        Nope
+                    </div>
+                    <div class="ui positive right labeled icon button">
+                        Yep, that's me
+                        <i class="checkmark icon"></i>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+            <hr>
+
+            <!-- CHECKBOX -->
+
+            <div class="ui checkbox">
+                <input type="checkbox" name="example">
+                <label>Make my profile visible</label>
+            </div>
+
+            <br><br>
+            <hr>
+
+            <!-- SEARCH -->
+
+            <div class="ui category search">
+                <div class="ui icon input">
+                    <input class="prompt" type="text" placeholder="Search animals...">
+                    <i class="search icon"></i>
+                </div>
+                <div class="results"></div>
+            </div>
+
+            <br><br>
+            <hr>
+
+            <!-- RATING -->
+            <!-- why are these not rendering?? -->
+
+            <div class="ui rating" data-max-rating="1"></div>
+
+            <div class="ui star rating" data-rating="3"></div>
+
+            <div class="ui heart rating" data-rating="1" data-max-rating="3"></div>
+
+            <br><br>
+            <hr>
+
+            <!-- FLUID IMAGE -->
+
+            <img class="ui fluid image" src="https://semantic-ui.com/images/wireframe/image.png">
+
+            <br><br>
+            <hr>
 
 
     </div>
